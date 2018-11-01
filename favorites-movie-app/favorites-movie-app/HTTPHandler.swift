@@ -22,7 +22,7 @@ class HTTPHandler {
                 let httpResponse = response as! HTTPURLResponse
                 let statusCode = httpResponse.statusCode
                 print("request completed with code: \(statusCode)")
-                if (statusCode ==200) {
+                if (statusCode == 200) {
                     print("return to completion handler with the data")
                     completionHandler(data as Data)
                 }
