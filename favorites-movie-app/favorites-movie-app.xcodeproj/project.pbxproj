@@ -14,6 +14,7 @@
 		65CA531F2189518500C44A97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CA531D2189518500C44A97 /* LaunchScreen.storyboard */; };
 		65CA53272189544500C44A97 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA53262189544500C44A97 /* CustomTableViewCell.swift */; };
 		65CA5329218955F600C44A97 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA5328218955F600C44A97 /* Movie.swift */; };
+		65CA532D218AA42800C44A97 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA532C218AA42800C44A97 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		65CA53202189518500C44A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65CA53262189544500C44A97 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		65CA5328218955F600C44A97 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		65CA532C218AA42800C44A97 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				65CA53202189518500C44A97 /* Info.plist */,
 				65CA53262189544500C44A97 /* CustomTableViewCell.swift */,
 				65CA5328218955F600C44A97 /* Movie.swift */,
+				65CA532C218AA42800C44A97 /* SearchViewController.swift */,
 			);
 			path = "favorites-movie-app";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65CA532D218AA42800C44A97 /* SearchViewController.swift in Sources */,
 				65CA53272189544500C44A97 /* CustomTableViewCell.swift in Sources */,
 				65CA53172189518400C44A97 /* ViewController.swift in Sources */,
 				65CA5329218955F600C44A97 /* Movie.swift in Sources */,
