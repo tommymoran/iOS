@@ -15,6 +15,8 @@
 		65CA53272189544500C44A97 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA53262189544500C44A97 /* CustomTableViewCell.swift */; };
 		65CA5329218955F600C44A97 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA5328218955F600C44A97 /* Movie.swift */; };
 		65CA532D218AA42800C44A97 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA532C218AA42800C44A97 /* SearchViewController.swift */; };
+		65CA532F218AAE2F00C44A97 /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA532E218AAE2F00C44A97 /* HTTPHandler.swift */; };
+		65CA5331218AB10400C44A97 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA5330218AB10400C44A97 /* JSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		65CA53262189544500C44A97 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		65CA5328218955F600C44A97 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		65CA532C218AA42800C44A97 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		65CA532E218AAE2F00C44A97 /* HTTPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHandler.swift; sourceTree = "<group>"; };
+		65CA5330218AB10400C44A97 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				65CA53262189544500C44A97 /* CustomTableViewCell.swift */,
 				65CA5328218955F600C44A97 /* Movie.swift */,
 				65CA532C218AA42800C44A97 /* SearchViewController.swift */,
+				65CA532E218AAE2F00C44A97 /* HTTPHandler.swift */,
+				65CA5330218AB10400C44A97 /* JSONParser.swift */,
 			);
 			path = "favorites-movie-app";
 			sourceTree = "<group>";
@@ -146,8 +152,10 @@
 			files = (
 				65CA532D218AA42800C44A97 /* SearchViewController.swift in Sources */,
 				65CA53272189544500C44A97 /* CustomTableViewCell.swift in Sources */,
+				65CA5331218AB10400C44A97 /* JSONParser.swift in Sources */,
 				65CA53172189518400C44A97 /* ViewController.swift in Sources */,
 				65CA5329218955F600C44A97 /* Movie.swift in Sources */,
+				65CA532F218AAE2F00C44A97 /* HTTPHandler.swift in Sources */,
 				65CA53152189518400C44A97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

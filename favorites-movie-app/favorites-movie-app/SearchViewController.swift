@@ -17,8 +17,23 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBAction func search (sender: UIButton) {
         print("Searching...")
+        var searchTerm = searchText.text!
+        if searchTerm.characters.count > 2 {
+            
+        }
     }
     
+    func retrieveMoviesByTerm(searchTerm: String){
+        let url = "https://omdbapi.com/?s\(searchTerm)&type=movie&r=json"
+        HTTPHandler.getJson(urlString: url, completionHandler: parseDataIntoMovies)
+    }
+    
+    func parseDataIntoMovies(data: Data?) -> Void {
+        if let data = data{
+            let object = 
+        }
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return searchResults.count
