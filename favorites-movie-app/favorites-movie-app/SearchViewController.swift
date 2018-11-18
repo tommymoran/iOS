@@ -19,18 +19,27 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         print("Searching...")
         var searchTerm = searchText.text!
         if searchTerm.characters.count > 2 {
+            retrieveMoviesByTerm(searchTerm: searchTerm)
             
         }
     }
     
     func retrieveMoviesByTerm(searchTerm: String){
-        let url = "https://omdbapi.com/?s\(searchTerm)&type=movie&r=json"
+        let url = "https://www.omdbapi.com/?s=\(searchTerm)&type=movie&r=json&apikey=9d2ede26";
+        print (url);
+        // = "http://img.omdbapi.com/?apikey=9d2ede26"
         HTTPHandler.getJson(urlString: url, completionHandler: parseDataIntoMovies)
     }
     
     func parseDataIntoMovies(data: Data?) -> Void {
         if let data = data{
-            let object = 
+            let object = JSONParser.parse(data: data)
+            if let object = object {
+                self.searchResults = MovieDataProcessor.mapJsonToMovies(object: object, moviesKey: "Search")
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
         }
         
     }
@@ -69,6 +78,20 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         return moviecell
     }
     
+    func displayMovieImage(_ row: Int, moviecell: CustomTableViewCell) {
+        let url: String = (URL(string: searchResults[row].imageUrl)?.absoluteString)!
+        URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { (data, response, error) -> Void in
+            if error != nil {
+                print(error!)
+                return
+            }
+            
+            DispatchQueue.main.async(execute: {
+                let image = UIImage(data: data!)
+                moviecell.movieImageView?.image = image
+            })
+        }).resume()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

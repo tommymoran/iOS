@@ -14,8 +14,6 @@ class HTTPHandler {
         let url =  URL(string: urlString!)
         
         print("URL being used is \(url!)")
-        
-        print("URL being used is \(url!)")
         let session = URLSession.shared
         let task = session.dataTask(with: url!) { data, response, error in
             if let data = data {
